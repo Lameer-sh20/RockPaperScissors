@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Bricolage;
+    src: url(BricolageGrotesque-VariableFont_opsz\,wdth\,wght.ttf);
+}
+
+body {
+    background-color: rgb(20, 20, 22);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#title {
+    font: 700 50px Bricolage;
+    color: azure;
+    margin: 50px 0;
+    text-align: center;
+}
+
+/* game container */
+.game_container {
+    background-color: #1f1f24;
+    border-radius: 5px;
+    display: flex;
+    padding: 10px;
+    max-width: min-content;
+    margin-top: 50px;
+}
+
+.player_container,
+.computer_container {
+    display: flex;
+    flex-direction: column;
+    background-color: #1f1f24;
+    min-width: max-content;
+}
+
+.info_container {
+    /* background-color: #32323a;
+    border-radius: 5px; */
+    padding: 20px 0;
+    border-bottom: 2px rgb(62, 62, 70) solid;
+}
+
+.logo_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_container p {
+    font: 500 40px Bricolage;
+    color: azure;
+}
+
+#player_logo,
+#computer_logo {
+    max-width: 50px;
+}
+
+/* scores */
+.score_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.score_container p {
+    font: 500 35px Bricolage;
+    color: #f0ffff;
+}
+
+#user_count,
+#computer_count {
+    font: 500 40px Bricolage;
+    color: #f0ffff;
+    padding-left: 10px;
+    margin-top: 20px;
+}
+
+/* line */
+#vs {
+    font: 600 40px Bricolage;
+    color: azure;
+    margin: 50px;
+    position: relative;
+    top: 80px;
+}
+
+/* moves images */
+.image_container {
+    max-width: 200px;
+    height: 180px;
+    margin: 50px 25px;
+}
+
+.image_container img {
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    filter: drop-shadow(0px 0px 27px #b1b0ac);
+}
+
+/* moves, match results  */
+.results_container {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+}
+
+#match_result {
+    font: 600 30px Bricolage;
+    color: rgb(54, 92, 196);
+    text-align: center;
+}
+
+/* player buttons */
+
+.player_buttons_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.choice {
+    background-color: #1f1f24;
+    border: 2px #2f2f35 solid;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 0 30px;
+    max-width: 160px;
+    min-width: 80px;
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    align-items: center;
+    font: 500 25px Bricolage;
+    color: azure;
+}
+
+.choice:hover,
+.choice:active {
+    box-shadow: 0px 0px 15px 0px #b1b0ac;
+}
+
+.choice img {
+    filter: drop-shadow(0px 0px 5px #d1c8a7);
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+/* final winner & play again */
+.playAgain_container {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #2f2f35;
+    width: 100%;
+    height: 100vh;
+}
+
+.box_container {
+    background-color: #44444d;
+    max-width: 500px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px rgb(70, 70, 78) solid;
+    border-radius: 5px;
+    box-shadow: 4px 6px #1d1d1b;
+}
+
+.box_container p {
+    font: 600 30px Bricolage;
+    color: rgb(240, 255, 255);
+}
+
+.winner_info {
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#winner_logo {
+    width: 60px;
+    margin-right: 10px;
+}
+
+#winner_score {
+    color: rgb(240, 255, 255);
+}
+
+#reload{
+    background-color: azure;
+    padding: 10px 20px;
+    font: 500 25px Bricolage;
+    border: 2px rgb(51, 51, 56) solid;
+    border-radius: 5px;
+}
+#reload:hover{
+    box-shadow: 2px 4px #1d1d1b;
+    transform: translate(1px,1px);
+}
+
+@media only screen and (max-width: 600px) {
+    .image_container {
+        margin: 20px 0px;
+    }
+}

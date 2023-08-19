@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock, Paper, Scissors</title>
+  <link href="stylingsheet.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <p id="title">Rock, Paper, Scissors</p>
+    <div class="game_container">
+      <div class="player_container">
+        <div class="info_container">
+          <div class="logo_container">
+            <img id="player_logo" src="image/player.png">
+            <p>Player</p>
+          </div>
+          <div class="score_container">
+            <p id="user_count">0</p>
+          </div>
+        </div>
+        <div class="image_container">
+          <img id="player_move" src="image/question-mark.png">
+        </div>
+      </div>
+      <div id="vs">VS
+      </div>
+      <div class="computer_container">
+        <div class="info_container">
+          <div class="logo_container">
+            <img id="computer_logo" src="image/robot.png">
+            <p>Computer</p>
+          </div>
+          <div class="score_container">
+            <p id="computer_count">0</p>
+          </div>
+        </div>
+        <div class="image_container">
+          <img id="computer_move" src="image/question-mark.png">
+        </div>
+      </div>
+    </div>
+    <div class="results_container">
+      <p id="match_result"></p>
+    </div>
+    <div class="player_buttons_container">
+      <button type="button" class="choice" value="rock"><img src="image/stone.png">Rock</button>
+      <button type="button" class="choice" value="paper"><img src="image/paper (1).png">Paper</button>
+      <button type="button" class="choice" value="scissors"><img src="image/scissors.png">Scissors</button>
+    </div>
+  </div>
+  <div class="playAgain_container">
+    <div class="box_container">
+      <p>Match Ends</p>
+      <div class="winner_info">
+        <img id="winner_logo" src="" alt="winner logo">
+        <p>Score: <span id="winner_score"></span></p>
+      </div>
+      <button type="button" id="reload" onclick=handlePlayAgain()>Play Again</button>
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+
+</html>
